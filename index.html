@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marhaba - Indo Arabic Restaurant</title>
+    <meta name="description"
+        content="Marhaba - Authentic South Indian Flavors. Premium Dine-in restaurant located in Tadigadapa, Kanuru.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Marhaba</h1>
+            <ul class="nav-links">
+                <li><a href="index.html" style="color: var(--accent-color);">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="ambience.html">Ambience</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Location & Contact</a></li>
+
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="m">M</span>
+                <span class="a1">a</span>
+                <span class="r">r</span>
+                <span class="h">h</span>
+                <span class="a2">a</span>
+                <span class="b">b</span>
+                <span class="a3">a</span>
+            </h1>
+            <p class="hero-tagline">Indo Arabic Restaurant</p>
+            <div class="hero-buttons">
+                <a href="menu.html" class="btn btn-primary">View Menu</a>
+                <a href="contact.html" class="btn btn-secondary">Get Directions</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <h2 class="footer-logo">Marhaba</h2>
+            <p class="footer-tagline">Indo Arabic Restaurant</p>
+            <div class="social-links">
+
+                <a href="https://www.instagram.com/marhaba_vijayawada?igsh=NWxsbzNhMnU4ZnM1"><i
+                        class="fab fa-instagram"></i></a>
+
+            </div>
+            <p class="footer-address">Ward No 13, Bandar Road KCP Colony, beside McDonald's, Tadigadapa, Kanuru, Andhra
+                Pradesh 520007</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Marhaba. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

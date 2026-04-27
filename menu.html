@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Marhaba Indo Arabic Restaurant</title>
+    <meta name="description"
+        content="Marhaba - Authentic South Indian Flavors. Premium Dine-in restaurant located in Tadigadapa, Kanuru.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="inner-nav">
+        <div class="nav-container">
+            <h1 class="logo">Marhaba</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html" style="color: var(--accent-color);">Menu</a></li>
+                <li><a href="ambience.html">Ambience</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Location & Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+    <!-- Spacer for fixed navbar -->
+    <div style="height: 80px;"></div>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center fade-in">
+                <h3 class="section-title">-Menu-</h3>
+            </div>
+
+            <div class="menu-tabs-container fade-in">
+                <div class="menu-tabs">
+                    <button class="tab-btn active">Starters Veg</button>
+                    <button class="tab-btn">Starters Nonveg</button>
+                    <button class="tab-btn">Tandoori</button>
+                    <button class="tab-btn">Veg curries</button>
+                    <button class="tab-btn">Nonveg curries</button>
+                    <button class="tab-btn">MANDI Veggies</button>
+                    <button class="tab-btn">MANDI Singles</button>
+                    <button class="tab-btn">Sharing - Chicken</button>
+                    <button class="tab-btn">Sharing - Mutton</button>
+                    <button class="tab-btn">Sharing - Seafood</button>
+                    <button class="tab-btn">Marhaba Mix</button>
+                    <button class="tab-btn">Breads</button>
+                    <button class="tab-btn">Desserts</button>
+                    <button class="tab-btn">Accompaniment</button>
+                    <button class="tab-btn">Beverages</button>
+                </div>
+            </div>
+
+            <div class="menu-categories">
+                <!-- Starters Veg -->
+                <div class="menu-category fade-in">
+                    <h4 class="category-title">Starters Veg</h4>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Tawa grilled Paneer</h5>
+                            </div><span class="price">₹239</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Paneer tikka</h5>
+                            </div><span class="price">₹249</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Paneer malai tikka</h5>
+                            </div><span class="price">₹259</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Paneer achari tikka</h5>
+                            </div><span class="price">₹259</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Paneer hariyali tikka</h5>
+                            </div><span class="price">₹269</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Mushroom achari tikka</h5>
+                            </div><span class="price">₹289</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Potato cheese balls</h5>
+                            </div><span class="price">₹239</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Veg nuggets</h5>
+                            </div><span class="price">₹199</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>French fries</h5>
+                            </div><span class="price">₹189</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Starters Nonveg -->
+                <div class="menu-category fade-in">
+                    <h4 class="category-title">Starters Nonveg</h4>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Effa Dajaj(chicken)</h5>
+                            </div><span class="price">₹389</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Laham meshwi</h5>
+                            </div><span class="price">₹499</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Mexican kebab</h5>
+                            </div><span class="price">₹389</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Dajaj Irani tikki</h5>
+                            </div><span class="price">₹369</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Mexican tikki</h5>
+                            </div><span class="price">₹349</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Dajaj Irani kebab</h5>
+                            </div><span class="price">₹389</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Rubiyan meshwi</h5>
+                            </div><span class="price">₹439</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Green wave tawa prawns</h5>
+                            </div><span class="price">₹399</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Tawa fish</h5>
+                            </div><span class="price">₹349</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Green tawa prawns</h5>
+                            </div><span class="price">₹429</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken nuggets</h5>
+                            </div><span class="price">₹239</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken wings</h5>
+                            </div><span class="price">₹299</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken roast</h5>
+                            </div><span class="price">₹289</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken drumstick</h5>
+                            </div><span class="price">₹329</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Fish fry</h5>
+                            </div><span class="price">₹349</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tandoori -->
+                <div class="menu-category fade-in">
+                    <h4 class="category-title">Tandoori</h4>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Tandoori chicken(F)</h5>
+                            </div><span class="price">₹599</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Tandoori chicken(H)</h5>
+                            </div><span class="price">₹329</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken tikka</h5>
+                            </div><span class="price">₹259</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken achari tikka</h5>
+                            </div><span class="price">₹269</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken afghani tikka</h5>
+                            </div><span class="price">₹289</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken malai tikka</h5>
+                            </div><span class="price">₹279</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken lemon tikka</h5>
+                            </div><span class="price">₹279</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken hariyali tikka</h5>
+                            </div><span class="price">₹299</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Kalmi kebab</h5>
+                            </div><span class="price">₹319</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Tangi kebab</h5>
+                            </div><span class="price">₹329</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Banjara kebab</h5>
+                            </div><span class="price">₹329</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Fish tikka</h5>
+                            </div><span class="price">₹349</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Veg curries -->
+                <div class="menu-category fade-in">
+                    <h4 class="category-title">Veg curries</h4>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Shahi paneer</h5>
+                            </div><span class="price">₹249</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Kadai paneer</h5>
+                            </div><span class="price">₹259</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Mushroom curry</h5>
+                            </div><span class="price">₹269</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Mushroom masala</h5>
+                            </div><span class="price">₹279</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Paneer tikka masala</h5>
+                            </div><span class="price">₹269</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Paneer butter masala</h5>
+                            </div><span class="price">₹259</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Nonveg curries -->
+                <div class="menu-category fade-in">
+                    <h4 class="category-title">Nonveg curries</h4>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Butter chicken masala</h5>
+                            </div><span class="price">₹289</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken tikka masala</h5>
+                            </div><span class="price">₹299</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Kadai chicken</h5>
+                            </div><span class="price">₹289</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Andhra chicken curry</h5>
+                            </div><span class="price">₹329</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Rayalaseema chicken curry</h5>
+                            </div><span class="price">₹339</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken Mughlai</h5>
+                            </div><span class="price">₹299</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- MANDI Veggies -->
+                <div class="menu-category fade-in">
+                    <h4 class="category-title">MANDI Veggies</h4>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Tawa paneer mandi</h5>
+                            </div><span class="price">S: ₹239 | H: ₹489 | F: ₹869</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Tawa mushroom mandi</h5>
+                            </div><span class="price">S: ₹269 | H: ₹499 | F: ₹879</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Paneer tikka masala mandi</h5>
+                            </div><span class="price">S: ₹249 | H: ₹489 | F: ₹869</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Mushroom masala mandi</h5>
+                            </div><span class="price">S: ₹289 | H: ₹499 | F: ₹899</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Paneer juicy mandi</h5>
+                            </div><span class="price">S: ₹279 | H: ₹499 | F: ₹889</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- MANDI For our Single Stars -->
+                <div class="menu-category fade-in">
+                    <h4 class="category-title">MANDI - For our Single Stars</h4>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken tawa juicy mandi</h5>
+                            </div><span class="price">₹299</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken madfoon mandi</h5>
+                            </div><span class="price">₹329</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken alfaham mandi</h5>
+                            </div><span class="price">₹299</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken Bbq mandi</h5>
+                            </div><span class="price">₹299</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken wings mandi</h5>
+                            </div><span class="price">₹339</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken roast mandi</h5>
+                            </div><span class="price">₹329</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Afghani chicken mandi</h5>
+                            </div><span class="price">₹329</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Mutton juicy mandi</h5>
+                            </div><span class="price">₹469</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Mutton fry mandi</h5>
+                            </div><span class="price">₹459</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Mutton tawa juicy mandi</h5>
+                            </div><span class="price">₹479</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Magic of sharing begins here - Chicken -->
+                <div class="menu-category fade-in">
+                    <h4 class="category-title">Magic of sharing - Chicken</h4>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken tawa juicy mandi</h5>
+                            </div><span class="price">H: ₹599 | F: ₹1189</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken madfoon mandi</h5>
+                            </div><span class="price">H: ₹609 | F: ₹1199</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Alfaham chicken mandi</h5>
+                            </div><span class="price">H: ₹619 | F: ₹1209</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Bbq chicken mandi</h5>
+                            </div><span class="price">H: ₹619 | F: ₹1209</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken fry mandi</h5>
+                            </div><span class="price">H: ₹629 | F: ₹1219</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Effa dajaj chicken mandi</h5>
+                            </div><span class="price">H: ₹629 | F: ₹1219</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken wings mandi</h5>
+                            </div><span class="price">H: ₹629 | F: ₹1219</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken roast mandi</h5>
+                            </div><span class="price">H: ₹629 | F: ₹1219</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken drumstick mandi</h5>
+                            </div><span class="price">H: ₹599 | F: ₹1189</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Afghani chicken mandi</h5>
+                            </div><span class="price">H: ₹599 | F: ₹1189</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken tikka mandi</h5>
+                            </div><span class="price">H: ₹599 | F: ₹1189</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Magic of sharing begins here - Mutton -->
+                <div class="menu-category fade-in">
+                    <h4 class="category-title">Magic of sharing - Mutton</h4>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Mutton juicy mandi</h5>
+                            </div><span class="price">H: ₹799 | F: ₹1579</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Mutton madfoon mandi</h5>
+                            </div><span class="price">H: ₹789 | F: ₹1589</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Mutton tawa juicy mandi</h5>
+                            </div><span class="price">H: ₹789 | F: ₹1569</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Mutton fry mandi</h5>
+                            </div><span class="price">H: ₹789 | F: ₹1569</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Laham meshwi mandi</h5>
+                            </div><span class="price">H: ₹829 | F: ₹1599</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Mutton ghee roast mandi</h5>
+                            </div><span class="price">H: ₹829 | F: ₹1599</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Mutton raan mandi (Pre order)</h5>
+                            </div><span class="price">-</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Magic of sharing begins here - Seafood -->
+                <div class="menu-category fade-in">
+                    <h4 class="category-title">Magic of sharing - Seafood</h4>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Tawa fish mandi</h5>
+                            </div><span class="price">H: ₹769 | F: ₹1509</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Fish fry mandi</h5>
+                            </div><span class="price">H: ₹779 | F: ₹1519</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Rubiyan meshwi prawn mandi</h5>
+                            </div><span class="price">H: ₹759 | F: ₹1529</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Marhaba Mix -->
+                <div class="menu-category fade-in">
+                    <h4 class="category-title">Marhaba Mix</h4>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Signature mushakkal mandi</h5>
+                                <p>(Mutton juicy, Chicken tawa juicy, Bbq, Alfaham, Chicken wings, Chicken roast, Green
+                                    fish, Prawns, Effa Dajaj)</p>
+                            </div>
+                            <span class="price">₹2699</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Omani mandi</h5>
+                                <p>(Effa dajaj, mutton madfoon, Mexican kebab)</p>
+                            </div>
+                            <span class="price">₹1299</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Emperor flame (Chicken)</h5>
+                                <p>(Chicken tandoori half, Chicken tikka, Achari tikka, Afghani tikka, Malai tikka)</p>
+                            </div>
+                            <span class="price">₹1899</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Emperor flame (Mutton)</h5>
+                                <p>(Mutton madfoon, Mutton juicy, Mutton tawa juicy, mutton fry, Laham meshwi)</p>
+                            </div>
+                            <span class="price">₹2699</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Jalpari mandi</h5>
+                            </div>
+                            <span class="price">₹2199</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Breads -->
+                <div class="menu-category fade-in">
+                    <h4 class="category-title">Breads</h4>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Plain roti</h5>
+                            </div><span class="price">₹50</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Butter roti</h5>
+                            </div><span class="price">₹60</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Plain naan</h5>
+                            </div><span class="price">₹65</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Butter naan</h5>
+                            </div><span class="price">₹70</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Lacha paratha</h5>
+                            </div><span class="price">₹85</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-category fade-in">
+                    <h4 class="category-title">Desserts</h4>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Apricot delight</h5>
+                            </div><span class="price">₹169</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Tres leche (Pista/Badam/Rose milk)</h5>
+                            </div><span class="price">₹199</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Cheese kunafa</h5>
+                            </div><span class="price">₹249</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Butterscotch kunafa</h5>
+                            </div><span class="price">₹259</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Nutella kunafa</h5>
+                            </div><span class="price">₹269</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Creamy kunafa</h5>
+                            </div><span class="price">₹259</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Accompaniment -->
+                <div class="menu-category fade-in">
+                    <h4 class="category-title">Accompaniment</h4>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Mandi rice</h5>
+                            </div><span class="price">₹199</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Chicken piece</h5>
+                            </div><span class="price">₹229</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Mutton piece (2)</h5>
+                            </div><span class="price">₹349</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Mayonnaise</h5>
+                            </div><span class="price">₹35</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Toppings</h5>
+                            </div><span class="price">₹49</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Beverages -->
+                <div class="menu-category fade-in">
+                    <h4 class="category-title">Beverages</h4>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Water bottle</h5>
+                            </div><span class="price">-</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Soft drink(750ml)</h5>
+                            </div><span class="price">-</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="item-info">
+                                <h5>Soft drink(250ml)</h5>
+                            </div><span class="price">-</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <h2 class="footer-logo">Marhaba</h2>
+            <p class="footer-tagline">Indo Arabic Restaurant</p>
+            <div class="social-links">
+
+                <a href="https://www.instagram.com/marhaba_vijayawada?igsh=NWxsbzNhMnU4ZnM1"><i
+                        class="fab fa-instagram"></i></a>
+
+            </div>
+            <p class="footer-address">Ward No 13, Bandar Road KCP Colony, beside McDonald's, Tadigadapa, Kanuru, Andhra
+                Pradesh 520007</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Marhaba. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambience - Marhaba Indo Arabic Restaurant</title>
+    <meta name="description"
+        content="Experience the stunning and comfortable ambience at Marhaba - Authentic South Indian Flavors. Premium Dine-in restaurant.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Marhaba</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="ambience.html" style="color: var(--accent-color);">Ambience</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Location & Contact</a></li>
+
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+    <!-- Ambience Hero Section -->
+    <section class="ambience-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" style="font-size: 3rem; margin-top: 100px;">Our Ambience</h1>
+            <p class="hero-tagline">Experience the perfect dining atmosphere</p>
+        </div>
+    </section>
+
+    <!-- 3D Carousel Section -->
+    <section class="carousel-section">
+        <h2 class="section-title text-center" style="margin-bottom: 2rem;">A Glimpse of Marhaba</h2>
+        <div id="drag-container">
+            <div id="spin-container">
+                <img src="img1.jpeg" alt="Ambience Marhaba 1">
+                <img src="img2.jpeg" alt="Ambience Marhaba 2">
+                <img src="img3.jpeg" alt="Ambience Marhaba 3">
+                <img src="img4.jpeg" alt="Ambience Marhaba 4">
+                <img src="img5.jpeg" alt="Ambience Marhaba 5">
+                <img src="img6.jpeg" alt="Ambience Marhaba 6">
+                <img src="img7.jpeg" alt="Ambience Marhaba 7">
+                <img src="img8.jpeg" alt="Ambience Marhaba 8">
+                <img src="img9.jpeg" alt="Ambience Marhaba 9">
+                <img src="img10.jpeg" alt="Ambience Marhaba 10">
+                <img src="img11.jpeg" alt="Ambience Marhaba 11">
+
+
+            </div>
+            <div id="ground"></div>
+        </div>
+        <p class="text-center" style="margin-top: 2rem; color: var(--text-light);">Drag to rotate</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <h2 class="footer-logo">Marhaba</h2>
+            <p class="footer-tagline">Indo Arabic Restaurant</p>
+            <div class="social-links">
+
+                <a href="https://www.instagram.com/marhaba_vijayawada?igsh=NWxsbzNhMnU4ZnM1"><i
+                        class="fab fa-instagram"></i></a>
+
+            </div>
+            <p class="footer-address">Ward No 13, Bandar Road KCP Colony, beside McDonald's, Tadigadapa, Kanuru, Andhra
+                Pradesh 520007</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Marhaba. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

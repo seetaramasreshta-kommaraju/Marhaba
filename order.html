@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order & Reserve - Marhaba Indo Arabic Restaurant</title>
+    <meta name="description"
+        content="Marhaba - Authentic South Indian Flavors. Premium Dine-in restaurant located in Tadigadapa, Kanuru.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="inner-nav">
+        <div class="nav-container">
+            <h1 class="logo">Marhaba</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="ambience.html">Ambience</a></li>
+                <li><a href="order.html" style="color: var(--accent-color);">Order</a></li>
+                <li><a href="contact.html">Location & Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+    <!-- Spacer for fixed navbar -->
+    <div style="height: 80px;"></div>
+
+    <!-- Order Section -->
+    <section id="order" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center fade-in">
+                <h3 class="section-title">Order & Reserve</h3>
+                <p>Choose your preferred option</p>
+            </div>
+
+            <div class="options-grid">
+
+                <div class="option-card fade-in">
+                    <i class="fas fa-motorcycle"></i>
+                    <h4>
+                        Order on Zomato</h4>
+                    <a href="https://www.zomato.com/vijayawada/marhaba-indo-arabic-restaurant-poranki/order"
+                        class="btn btn-primary">Order Now</a>
+                </div>
+
+                <div class="option-card fade-in">
+                    <i class="fas fa-motorcycle"></i>
+                    <h4>
+                        Order on Swiggy</h4>
+                    <a href="https://www.swiggy.com/city/vijayawada/marhaba-indo-arabic-restaurant-benz-circle-and-auto-nagar-rest1354097"
+                        class="btn btn-primary">Order Now</a>
+                </div>
+
+                <div class="option-card fade-in">
+                    <i class="fas fa-utensils"></i>
+                    <h4>
+                        Book on Easy Diner</h4>
+                    <a href="https://www.eazydiner.com/vijayawada/marhaba-the-indo-arbic-restaurant-kanuru-vijayawada-712441"
+                        class="btn btn-primary">Book Now</a>
+                </div>
+
+                <div class="option-card fade-in">
+                    <i class="fas fa-chair"></i>
+                    <h4>
+                        Reserve a Table</h4>
+                    <a href="https://whatsform.com/e9mzvx" class="btn btn-primary">Book Now</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <h2 class="footer-logo">Marhaba</h2>
+            <p class="footer-tagline">Indo Arabic Restaurant</p>
+            <div class="social-links">
+
+                <a href="https://www.instagram.com/marhaba_vijayawada?igsh=NWxsbzNhMnU4ZnM1"><i
+                        class="fab fa-instagram"></i></a>
+
+            </div>
+            <p class="footer-address">Ward No 13, Bandar Road KCP Colony, beside McDonald's, Tadigadapa, Kanuru, Andhra
+                Pradesh 520007</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Marhaba. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
