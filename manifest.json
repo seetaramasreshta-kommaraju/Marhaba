@@ -1,0 +1,25 @@
+{
+  "name": "Marhaba Indo Arabic Restaurant",
+  "short_name": "Marhaba",
+  "description": "Best Arabian Restaurant in Vijayawada — Authentic Mandi, Tandoori, Kebabs & Arabic cuisine at Kanuru, Bandar Road.",
+  "start_url": "/Marhaba/",
+  "scope": "/Marhaba/",
+  "display": "standalone",
+  "background_color": "#1a4a38",
+  "theme_color": "#791a1f",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["food", "restaurant"],
+  "lang": "en-IN"
+}

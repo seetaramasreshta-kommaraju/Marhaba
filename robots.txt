@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://marhaba-vijayawada.github.io/Marhaba/sitemap.xml
